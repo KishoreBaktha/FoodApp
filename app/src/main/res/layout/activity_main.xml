@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/actionModeSplitBackground"
+    android:backgroundTint="?attr/actionModeSplitBackground"
+    tools:context="com.example.kishorebaktha.foodapp.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:hint="Enter name of item"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter price"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="34dp"
+        app:srcCompat="@mipmap/food" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="83dp"
+        android:background="?attr/actionModeSplitBackground"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Choose Image" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="28dp"
+        android:background="?attr/actionModeSplitBackground"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/button"
+        android:background="?attr/colorPrimaryDark"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Food List" />
+</RelativeLayout>
